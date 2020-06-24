@@ -2,27 +2,145 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <style>
-    h1,h3 {
-      padding: 30px 20px;
-      font-size: 28px;
-      font-family: monospace;
-      background-color: cadetblue;
-      color: #fff;
-    }
-    h3 { 
-      font-size: 18px;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            margin-top: 0;
+            font-size: 24px;
+            font-family: monospace;
+        }
+
+        p {
+            font-size: 15px;
+            font-family: sans-serif;
+        }
+
+        h3 {
+            font-size: 18px;
+        }
+
+        .border {
+            border: 1px solid tan;
+            padding: 20px;
+            margin-top: 15px;
+        }
+        .border h4 { 
+            margin-bottom: 0px;
+        }
+    </style>
 </head>
 
 <body>
-  <div>
-    <h1>This is my first Project on Git</h1>
-  </div>
+    <div class="border">
+        <h1>Remember</h1>
+        <p>- Every time create new branch branch name</p>
+        <p>- like design_fix</p>
+        <p>- use in postfix like under scrore</p>
+    </div>
+    <div class="border">
+        <h1>New Project Setup</h1>
+        <p>- go to code folder</p>
+        <p>- create folder then create index.html / php</p>
+        <p>- open laradoc folder on vs code</p>
+        <p>- go to site folder and copy & past file, dev.hio.com.conf</p>
+        <p>- change/add url like --> dev.folder.com.conf</p>
+        <p>- open dev.folder.com.conf</p>
+        <p>- change server name, like dev.sitename.com</p>
+        <p>- change root foder structure, /var/www/folder</p>
+        <p>- laradock folder hit command line, sudo docker-compose restart nginx</p>
+        <p>- open your terminal and hit command, sudo nano /etc/hosts</p>
+        <p>- Entry on hosts,like 127.0.0.1 & dev.folder.com</p>
+        <p>- ctrl + x & save Y press</p>
+    </div>
+    <div class="border">
+        <h1>DB (Databash Basic)</h1>
+        <h4>DB Url</h4>
+        <p>- port :- http://localhost:8082/</p>
+        <h4>DB Create</h4>
+        <p>- Click on db then topbar menu oprations tab select</p>
+        <h4>Remove database</h4>
+        <p>- drop the db option select</p>
+        <h4>Import database</h4>
+        <p>- Click Import tab</p>
+        <p>- Choose File</p>
+        <p>- Go btn Click</p>
+    </div>
+    
+    <div class="border">
+        <h1>in-chief Port/localhost Issue</h1>
+        <p>- always start backend like npm run watch</p>
+        <h4>port is not working</h4>
+        <p>- yarn dev --port=3001 hit this command</p>
+    </div>
+
+    <div class="border">
+        <h1>Error(not working) /.run.sh</h1>
+        <p>- cd/laradock folder open vs code then change .env file change this</p>
+        <h4>- PMA_PORT </h4>
+        <p>- change it to PMA_PORT=8082</p>
+        <p>- docker-compose restart phpmyadmin</p>
+        <p>- docker-compose up -d phpmyadmin</p>
+    </div>
+
+    <div class="border">
+        <h1>New User Create in Backend in In-chief project</h1>
+        <p>-<a href="http://dev.in-chief.com/admin/users"> http://dev.in-chief.com/admin/users </a></p>
+        <p>- Click on Add-user btn & fill Detail form</p>
+    </div>
+
+
+    <div class="border">
+        <h1>New Project Setup Step By Step with github</h1>
+        <p>- cd/code folder terminal through</p>
+        <p>- hit command git clone git@gitlab.com:radicallooplab/hio-admin-portal</p>
+        <p>- open folder then yarn install & yarn start</p>
+    </div>
+
+
+    <div class="border">
+        <h1>Pdf Generate</h1>
+        <p>- cd/code/laradock folder</p>
+        <p>- docker-compose exec workspace bash command hit</p>
+        <p>- cd task/</p>
+        <p>- wkhtmltopdf task.html plan.pdf hit command</p>
+    </div>
+
+    <div class="border">
+        <h1>Composer install</h1>
+        <p>- cd/code/laradock folder</p>
+        <p>- docker-compose exec workspace bash </p>
+        <p>- cd inchief/backend (go to inchief backend folder)</p>
+        <p>- composer install</p>
+        <p>- php artisan migrate</p>
+    </div>
+
+
+    <div class="border">
+        <h1>Git About</h1>
+        <h4>git pull origin</h4>
+        <p>- fetch all branches </p>
+        <p>- only one time git ko config karna hoga, jab new project ho tag </p>
+        <p>- open vs code then open your project and past your github respositary then git remote add origin https://github.com/hardik8983/github.git</p>
+        <h4>git clone</h4>
+        <p>- username@host:/path/to/repository</p>
+        <h4>Add one or more files to staging (index)</h4>
+        <p>- git add .</p>
+        <h4>Commit changes msg</h4>
+        <p>- git commit -m "Commit message"</p>
+        <h4>git push </h4>
+        <p>- git push origin master</p>
+        <h4>Create a new branch and switch to it</h4>
+        <p>- git checkout -b branchname </p>
+        <h4>Switch from one branch to another:	</h4>
+        <p>- git checkout branchname </p>
+        <h4>Delete the feature branch: </h4>
+        <p>- git branch -d branchname </p>
+        <h4>Push all branches to your remote repository</h4>
+        <p>- git push --all origin</p>
+    </div>
+
 </body>
 
 </html>

@@ -152,6 +152,39 @@
         <p>- <a href="https://ohdear.app/">https://ohdear.app/</a></p>
     </div>
 
+    <div class="border">
+        <h1>Redux About</h1>
+
+        <h4>Redux Install</h4>
+        <p>- npm install react-redux</p> 
+
+        <h4>Actions</h4>
+        <p>- Actions send data from your application to your store</p>
+        <p>- Actions are plain JavaScript objects</p>
+        <p>- Redux, action creators simply return an action:</p>
+        <p>- Actions are central to Redux</p>
+        <p>- An action has two properties, <b>type</b> and <b>payload</b></p>
+        <p>- Only type is required</p>
+        <p>- you can put as many properties on an object</p>
+
+        <h4>Reducers</h4>
+        <p>- Reducers specify how the application's state changes in response to actions sent to the store.</p>
+        <p>- The reducer is a pure function that takes the previous state and an action, and returns the next state.</p>
+        
+        <h4>Store</h4>
+        <p>- The Store is the object that brings them together. The store has the following responsibilities:</p>
+        <p>- Holds application state;</p>
+        <p>- Allows access to state via getState();</p>
+        <p>- Allows state to be updated via dispatch(action);</p>
+        <p>- Registers listeners via subscribe(listener);</p>
+        <p>- It's important to note that you'll only have a single store in a Redux application.</p>
+
+        <h4>Connect</h4>
+        <p>- The connect() function connects a React component to a Redux store.</p>
+        <p>-  It provides its connected component with the pieces of the data it needs from the store, and the functions it can use to dispatch actions to the store.</p>
+    </div>
+
+
 </body>
 
 </html>
